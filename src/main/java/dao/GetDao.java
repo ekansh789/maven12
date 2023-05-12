@@ -23,7 +23,7 @@ public class GetDao
 				db_password=java ssm.getparameter('dev_rds_creds')
 				Replace the code to retrieve the db_hostname, db_user, db_password from SSM Parameter Store
 				Replace the code to retrieve the db_hostname, db_user, db_password from Secret Manager
-			Connection con = DriverManager.getConnection("jdbc:mysql://java-tomcat-db1.chlifuv3ncjk.us-east-1.rds.amazonaws.com",db_username,db_password);
+			Connection con = DriverManager.getConnection("jdbc:mysql://java-tomcat-db1.chlifuv3ncjk.us-east-1.rds.amazonaws.com/db",db_username,db_password);
 			*/
 			Statement st = con.createStatement();
 			// ResultSet rs = st.executeQuery("select * from employees where emp_no=" + emp_no);
